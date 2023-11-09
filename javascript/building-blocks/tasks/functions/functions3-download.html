@@ -29,6 +29,15 @@
     const names = ['Chris', 'Li Kang', 'Anne', 'Francesca', 'Mustafa', 'Tina', 'Bert', 'Jada']
     const para = document.createElement('p');
 
+    function random(min, max){
+      return Math.floor(Math.random() * (max - min) + min);
+    }
+
+    function chooseName(randomNumber){
+      return names[randomNumber];
+    }
+
+    para.textContent = chooseName(random(0,8));
     // Add your code here
 
     // Don't edit the code below here!
